@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Achoura - Portfolio</title>
+    <link rel="stylesheet" href="./style.css"/>
+    <script src="./script.js"></script>
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <nav>
+      <div id="home">
+        <div class="profile_name">
+          Abdoul Wahab Oumarou Achoura
+          <div class="contact_info">
+            <img src="html_finalprojimages/envelope.png" alt="https://icons8.com/icon/124377/circled-envelope"/>
+          oumarouachouraaa@gmail.com 
+        </div>
+        <div style="clear:both;"></div>
+        <div class="contact_info">
+          <img src="html_finalprojimages/phone.png" alt="https://icons8.com/icon/124377/circled-envelope"/>
+          +22798649076
+
+        </div>
+        </div>
+        <div class="topdiv">
+          <a class="topmenu" href="#about-me">About Me</a>
+          <a class="topmenu" href="#Skills">Skills</a>
+          <a class="topmenu" href="#Projects">Projects</a>
+          <a class="topmenu" href="#Recommendations">Recommendations</a>
+        </div>
+      </div>    
+    </nav>
+
+    <!-- About Me -->
+    <section id="about-me" class="container">
+      <div>
+        <img src="https://miro.medium.com/max/1400/1*qdAW1TjCN57h1lbuuzvchg.gif" class="profile_image"/>
+      </div>
+
+      <div>
+          <h1>
+            Hi, I'm Abdoul Wahab! <img src="html_finalprojimages/waving-hand.png" width="60px"/>
+          </h1>
+          <p>
+            I am a software engineer student with 1 year of experience in Web development. <br>
+            I have worked on some web applications using C#, HTML, CSS and Js tools. <br> 
+            I have also learning Cloud computing from IBM cloud courses, after what I have <br/>worked on some small projects.
+          </p>
+      </div>
+    </section>
+              
+    <!-- Skills -->
+    <section id="skills">
+      <h2>Skills</h2>
+      <div style="clear:both;"></div>
+
+      <div class="all_skills">
+        <div class="skill">
+          <img src="html_finalprojimages/html5.png"/>
+          <h6>HTML</h6>
+          <p>2 years experience</p>
+        </div>  
+
+        <div class="skill">
+          <img src="html_finalprojimages/js.jpeg"/>
+          <h6>JavaScript</h6>
+          <p>6 months experience</p>
+        </div> 
+        
+        <div class="skill">
+            <img src="https://miro.medium.com/v2/resize:fit:594/1*ymVNbsdd7KxHXHC4-LP7kw.png"/>
+            <h6>C#</h6>
+            <p>5 months experience</p>
+        </div> 
+
+        <div class="skill">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/800px-Python-logo-notext.svg.png"/>
+        <h6>Python</h6>
+        <p>1 year experience</p>
+        </div> 
+
+        <div class="skill">
+        <img src="https://media.istockphoto.com/id/1342397323/vector/cloud-computing-blue-line-icon-cloud-with-two-arrows-online-data-backup-concept.jpg?s=612x612&w=0&k=20&c=lSDRpWhfTQX9_X-VuBVF7BjVg7liCMNV3a-C81ZtJys="/>
+        <h6>Cloud Computing</h6>
+        <p>1 year experience</p>
+        </div> 
+
+
+      </div>
+    </section>
+          
+    <!-- Projects -->
+    <section class="projects" id="projects">
+      <h2>
+        Projects
+      </h2>
+      <div style="clear:both;"></div>
+
+        <div id="projects-container" class="projects-container">
+          <div class="project-card">
+            <h3>Virtual Health Assistant</h3>
+            <ul>
+              <li>Developed a  virtual health assistant that retrieve symptoms of a specific disease using Python and MongoDb tools.</li>
+            </ul>
+          </div>
+          <hr>
+          <div class="project-card">
+            <h3>LibraryApp</h3>
+            <ul>
+              <li>Created a LibraryApp that stores books and manages their maintenance and distribution</li>
+            </ul>
+          </div>
+          <hr>
+          <div class="project-card">
+            <h3>Master Card</h3>
+            <ul>
+              <li>Reproduced a Master Card example from a given project from a front-end course on Youtube</li>
+            </ul>
+          </div>
+    </div>
+    </section>
+    <div style="clear:both;"></div>
+
+    <!-- Recommendations -->
+    <section id="recommendations">
+      <h2>Recommendations</h2>
+      <div style="clear:both;"></div>
+      <div class="all_recommendations" id="all_recommendations">
+        <div class="recommendation">
+          <span>&#8220;</span>
+          Actively seek feedback from peers, seniors, and mentors to improve your coding practices, 
+          problem-solving abilities, and overall performance as a developer. Don't hesitate to ask questions
+          and seek guidance when encountering challenges or uncertainties.
+        </div>
+        <div class="recommendation">
+          <span>&#8220;</span>
+          Abdoul Wahab as a junior full stack developer, prioritize continuous learning to enhance your <br> 
+          skills and stay updated with the latest technologies and trends in both front-end and back-end development.
+          <span>&#8221;</span>
+        </div>
+        <div class="recommendation">
+          <span>&#8220;</span>
+          Abdoul Wahab is an exceptional junior full stack developer with a keen eye for detail and a passion
+          for continuous learning. His dedication to mastering new technologies and his proactive approach to 
+          problem-solving make him a valuable asset to any team.
+          <span>&#8221;</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Recommendation Form -->
+    <section id="contact">
+      <div class="flex_center">
+        <fieldset>
+          <legend class="introduction">Leave a Recommendation</legend>          
+          <input type="text" placeholder="Name (Optional)"> <br/>
+          <textarea id="new_recommendation" cols="500" rows="10" placeholder="Message"></textarea>
+          <div class="flex_center">
+            <button id="recommend_btn" onclick="addRecommendation()">Click me</button>
+          </div>
+        </fieldset>
+      </div>
+    </section>
+
+    <div class="iconbutton">
+      <a href="#home">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="white" width="63px">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M15 11.25l-3-3m0 0l-3 3m3-3v7.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+        </svg></a>
+    </div>
+
+    <div class="popup" id="popup" class="flex_center">
+      <img src="html_finalprojimages/checkmark--outline.svg"/>
+      <h3>Thanks for adding a recommendation</h3>
+      <button onclick="showPopup(false)">Ok</button>
+    </div>
+  </body>
+</html>
